@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;800&display=swap");
+:root {
+  --dark-color: #1c2541;
+  --main-color: #3a506b;
+  --font-color: #ffffff;
+  --main-width: 450px;
+}
+* {
+  font-family: "Vazirmatn", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  direction: rtl;
+  color: var(--font-color);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 32px;
+  width: 100%;
+  background-color: var(--dark-color);
+}
+.main {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--main-color);
+  height: 100%;
+}
+.searchinputlabel {
+  font-size: 19px;
+  margin: 0px 0px 20px 0px;
+}
+.searchinput {
+  width: var(--main-width);
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 30px;
+  color: var(--dark-color);
+}
+.serachresults ul li,
+.teacherfindresults ul li,
+.bookletfindresult ul a li {
+  width: var(--main-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: var(--dark-color);
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.bookletfindresult ul a {
+  text-decoration: none;
+}
+.stepstitle {
+  font-size: 19px;
+}
+.backbtn {
+  margin: 30px;
+  width: var(--main-width);
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--font-color);
+  color: var(--dark-color);
+}
