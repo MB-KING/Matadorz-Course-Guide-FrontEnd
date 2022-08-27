@@ -19,6 +19,8 @@ const FindeCourses = ({ setCourseId, setStep }) => {
         .catch((error) => {
           console.log(error);
         });
+    } else {
+      setCourses(null);
     }
   };
   return (
