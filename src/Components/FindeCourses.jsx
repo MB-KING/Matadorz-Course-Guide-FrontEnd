@@ -10,7 +10,7 @@ const FindeCourses = ({ setCourseId, setStep }) => {
       method: "get",
       url: `${process.env.REACT_APP_API_BASE_URL}/api/findCourses?courseName=${e.target.value}`,
     };
-    if (e.target.value.length > 2) {
+    if (e.target.value.length > 0) {
       await axios(config)
         .then((response) => {
           setIsLoading(true);
